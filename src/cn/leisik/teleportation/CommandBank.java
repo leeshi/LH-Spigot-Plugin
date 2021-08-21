@@ -24,33 +24,35 @@ public class CommandBank implements CommandExecutor {
             Player player = (Player) sender;
 
             if (args == null || args.length == 0) {
-                player.sendMessage("Type /bank d (deposit) x to deposit emeralds into your bank.\nType /bank w (withdraw) x to withdraw.\nType /bank b (balance) to check your balance.");
+                player.sendMessage("欢迎使用LH民主银行线上存储账户，此账户可存储和提取现金（绿宝石）\n
+				震撼功能还包括：查询余额，线上消费、贷款业务，以下为操作手册\n
+				输入 /bank d <金额>，存储指定金额的现金\n输入 /bank w <金额>，提取指定金额现金到当前背包中.\n输入 /bank b 查询当前余额");
             } else if (args.length == 2) {
 
                 int amount;
                 try {
                     amount = Integer.parseInt(args[1]);
                 } catch (NumberFormatException e) {
-                    player.sendMessage("数字输入错误");
+                    player.sendMessage("不能接受的金额类型");
                     return true;
                 }
 
                 if (amount <= 0) {
-                    player.sendMessage("Central Bank of LH: Don't ever try to steal money from CBLH!");
+                    player.sendMessage("LH民主银行: 你目前仍然欠款");
                     return true;
                 }
 
-                if (args[0].equals("d")) {
+                if (args[0].equals("d") || args[0].equals("D")) {
                     if (!this.checkInventory(player, amount)) {
-                        player.sendMessage("Central Bank of LH: You don't have enough emeralds.");
+                        player.sendMessage("LH民主银行: 你没有足够的现金");
                     } else {
                         ItemStack itemStack = new ItemStack(COMMAND_CURRENCY, amount);
                         player.getInventory().removeItem(itemStack);
                         this.reduceBalance(player, -amount);
 
-                        player.sendMessage("Central Bank of LH: Operation successful.");
+                        player.sendMessage("LH民主银行: 操作成功，正在打印交易凭条");
                     }
-                } else if (args[0].equals("w")) {
+                } else if (args[0].equals("w") || args[0].equals("W")) {
                     if (checkBalance(player, amount)) {
                         ItemStack itemStack = new ItemStack(COMMAND_CURRENCY, amount);
                         //deal with full inventory
@@ -62,15 +64,15 @@ public class CommandBank implements CommandExecutor {
                         }
                         this.reduceBalance(player, amount);
 
-                        player.sendMessage("Central Bank of LH: Operation successful.");
+                        player.sendMessage("LH民主银行: 操作成功，正在打印交易凭条");
                     } else {
-                        player.sendMessage("Central Bank of LH: Insufficient  balance.");
+                        player.sendMessage("LH民主银行: 存款不足");
                     }
                 }
-            } else if (args.length == 1 && args[0].equals("b")) {
-                player.sendMessage(String.format("Central Bank of LH: Account balance -> %d", this.getBalance(player)));
+            } else if (args.length == 1 && (args[0].equals("b")||args[0].equals("B"))) {
+                player.sendMessage(String.format("LH民主银行: 账户余额 -%d-", this.getBalance(player)));
             } else {
-                player.sendMessage("Type /bank deposit x to deposit emeralds into your bank.\nType /bank withdraw x to withdraw.\nType /bank account to check your balance.");
+                player.sendMessage("输入错误，请按照手册输入\n输入 /bank d <金额>，存储指定金额的现金\n输入 /bank w <金额>，提取指定金额现金到当前背包中.\n输入 /bank b 查询当前余额");
             }
         }
 
