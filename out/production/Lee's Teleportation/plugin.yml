@@ -1,0 +1,14 @@
+name: LeesTeleportation
+version: 0.0.1
+author: Leisik
+main: cn.leisik.teleportation.LeesTeleportation
+api-version: 1.16
+
+commands:
+  ltp:
+    description: LH public transit.
+    usage: /<command>
+
+  bank:
+    description: Bank of LH.
+    usage: /<command>
