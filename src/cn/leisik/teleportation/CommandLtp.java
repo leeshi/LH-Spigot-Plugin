@@ -108,17 +108,17 @@ public class CommandLtp implements CommandExecutor {
         if (balance < COMMAND_EXP) {
             int remainedExp = COMMAND_EXP - balance;
 			//此处扣完钱应该先立刻清算账户,防止节外生枝   Hubert
-			this.reduceBalance(player, balance);
+			this.deductBalance(player, balance);
             ItemStack itemStack = new ItemStack(COMMAND_CURRENCY, remainedExp);
             player.getInventory().removeItem(itemStack);
             
         } else {
-            this.reduceBalance(player, COMMAND_EXP);
+            this.deductBalance(player, COMMAND_EXP);
         }
 
     }
 
-    private void reduceBalance (Player player, int amount) {
+    private void deductBalance(Player player, int amount) {
         // create an account for the player
         serverBank.getServerBank().putIfAbsent(player.getName(), 0);
 
@@ -144,7 +144,7 @@ public class CommandLtp implements CommandExecutor {
         if (greetingCode == 1) {
             player.sendMessage("输入 /ltp 玩家名 可以tp至玩家。\n输入 /ltp x y z 可以tp到指定位置。\n输入 /ltp 显示该条信息。\n 每次传送成功将消耗5个绿宝石(优先扣除银行账户内的)");
         } else if (greetingCode == 2) {
-            player.sendMessage("找不到你要传送的玩家。");
+            player.sendMessage("找不到你要传送的玩家，或者他不在线。");
         } else if (greetingCode == 3) {
             player.sendMessage(String.format("你的银行账户与背包余额总和不足 %d :)", COMMAND_EXP));
         } else if (greetingCode == 4) {

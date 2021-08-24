@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LeesTeleportation:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LeesTeleportation_jar</output-path>
+    <root id="archive" name="Lee's Teleportation.jar">
+      <element id="module-output" name="Lee's Teleportation" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210604.221538-95.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210607.210942-96.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210608.042337-97.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210611.040649-98.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210611.041013-99.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210604.221538-95-shaded.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210607.210942-96-shaded.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210608.042337-97-shaded.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210611.040649-98-shaded.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210611.041013-99-shaded.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210604.221538-95-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210604.221538-95-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210607.210942-96-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210607.210942-96-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210608.042337-97-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210608.042337-97-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210611.040649-98-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210611.040649-98-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210611.041013-99-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snapshots/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210611.041013-99-sources.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
